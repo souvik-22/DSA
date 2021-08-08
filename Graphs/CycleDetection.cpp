@@ -1,17 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void dfs(int node, vector<int> adj[], vector<bool> &vis, vector<int> &dist, int d)
+bool dfs(int node, vector<int> adj[], vector<bool> &vis, int parent)
 {
     vis[node] = true;
-    dist[node] = d;
-    for (int v : adj[node])
+    for (int child : adj[node])
     {
-        if (!vis[v])
+        if (!vis[child])
         {
-            dfs(v, adj, vis, dist, d + 1);
+            if (dfs(child, adj, vis, node))
+                return true;
         }
+        else if (child != parent)
+            return true;
     }
+    return false;
 }
 
 int main()
@@ -19,7 +22,7 @@ int main()
     int n, e;
     cin >> n >> e;
     vector<int> adj[n + 1];
-
+    vector<bool> vis(n + 1);
     while (e--)
     {
         int u, v;
@@ -27,14 +30,8 @@ int main()
         adj[u].push_back(v);
         adj[v].push_back(u);
     }
-    int node;
-    cin >> node;
-    vector<bool> vis(n + 1, false);
-    vector<int> dist(n + 1);
-    dfs(node, adj, vis, dist, 0);
-
-    for (int i = 1; i <= n; i++)
-    {
-        cout << "Dist. of " << i << " from " << node << " is: " << dist[i] << endl;
-    }
+    if (dfs(1, adj, vis, -1))
+        cout << "Cycle is there" << endl;
+    else
+        cout << "No Cycle is there" << endl;
 }
