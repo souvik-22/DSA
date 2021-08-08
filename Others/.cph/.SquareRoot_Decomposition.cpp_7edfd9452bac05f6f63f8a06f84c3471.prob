@@ -1,1 +1,0 @@
-{"name":"Local: SquareRoot_Decomposition","url":"d:\\Learning\\Others\\SquareRoot_Decomposition.cpp","tests":[{"id":1626614712043,"input":"9\n1 5 -2 6 8 -7 2 1 11\n2\n1 6\n2 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Learning\\Others\\SquareRoot_Decomposition.cpp","group":"local","local":true}

@@ -1,1 +1,0 @@
-{"name":"Local: Map_question","url":"d:\\Learning\\Map_question.cpp","tests":[{"id":1623660038460,"input":"9\nabc\ndef\nabc\nghj\njkl\nghj\nghj\nabc\nabd","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Learning\\Map_question.cpp","group":"local","local":true}
