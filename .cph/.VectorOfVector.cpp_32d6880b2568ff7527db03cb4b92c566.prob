@@ -1,0 +1,1 @@
+{"name":"Local: VectorOfVector","url":"d:\\Learning\\VectorOfVector.cpp","tests":[{"id":1623427703302,"input":"3\n3\n1 2 3\n3\n3 4 5\n2\n1 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Learning\\VectorOfVector.cpp","group":"local","local":true}
