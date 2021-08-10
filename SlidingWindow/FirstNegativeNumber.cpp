@@ -1,0 +1,3 @@
+/*
+First Negative Number in every window size of K
+*/
