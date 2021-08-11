@@ -36,7 +36,7 @@ int main()
     for (int i = 0; i < n; i++)
         cin >> a[i];
     if (minSubArrayLen(target, a))
-        cout << "No subarray exists";
+        cout << "No Subarray exist";
     else
         cout << "Size: " << minSubArrayLen(target, a);
 }
