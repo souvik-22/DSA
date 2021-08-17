@@ -13,7 +13,6 @@ int binarySearch(int arr[], int target, int start, int end)
         else
             return mid;
     }
-
     return -1;
 }
 
@@ -38,11 +37,11 @@ int main()
 {
     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 23, 45, 78, 90};
     int target = 45;
-
-    if (ans(arr, target) == -1)
+    int res = ans(arr, target);
+    if (res == -1)
         cout << "Not found!" << endl;
     else
-        cout << "Found!" << endl;
+        cout << "Found at index: " << res << endl;
 
     return 0;
 }
