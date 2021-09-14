@@ -17,7 +17,7 @@ struct Node
 
 void topView(Node *root)
 {
-    vector<int> ans;
+    // vector<int> ans;
     if (root == NULL)
     {
         cout << "Tree is empty";
