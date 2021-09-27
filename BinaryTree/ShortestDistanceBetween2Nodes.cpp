@@ -79,7 +79,7 @@ int main()
     root->right = new Node(5);
 
     root->left->left = new Node(1);
-    root->left->right = new Node(3);
+    root->left->right = new Node(7);
     root->right->right = new Node(6);
 
     /* Actual Binary Tree
@@ -87,7 +87,7 @@ int main()
           /  \
          9    5    
         / \    \
-       1  3     6  
+       1  7     6  
     */
 
     int n1 = 3, n2 = 6;
