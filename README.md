@@ -1,1 +1,1 @@
-This Repo contains C++ code of some DSA concepts.
+This Repo contains C++ code of some DSA topics.
